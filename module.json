@@ -1,26 +1,32 @@
 [
   {
-    "name": "Meowsy",
-    "species" : "cat",
-    "foods": {
-      "likes": ["tuna", "catnip"],
-      "dislikes": ["ham", "zucchini"]
+    "Name": "Undergraduate",
+    "Course":"Web Development",
+    "Module": {
+      "Learning outcomes":["LO1", "LO2"],
+      "Assignment":["CW1", "CW2"],
+      "Volume":["1000 words", "4000 words"],
+      "weights":["20%", "80%"]
     }
   },
   {
-    "name": "Barky",
-    "species" : "dog",
-    "foods": {
-      "likes": ["bones", "carrots"],
-      "dislikes": ["tuna"]
+    "Name": "Post-Graduate",
+    "Course":"Big Data",
+    "Module": {
+    "Learning outcomes":["LO1", "LO2"],
+    "Assignment":["CW1", "CW2"],
+    "Volume":["1000 words", "4000 words"],
+    "weights":["20%", "80%"]
     }
   },
   {
-    "name": "Purrpaws",
-    "species" : "cat",
-    "foods": {
-      "likes": ["mice"],
-      "dislikes": ["cookies"]
+    "Name": "Research",
+    "Course":"Data Mining",
+    "Module": {
+      "Learning outcomes":["LO1", "LO2"],
+      "Assignment":["CW1", "CW2"],
+      "Volume":["1000 words", "4000 words"],
+      "weights":["20%", "80%"]
     }
   }
 ]
