@@ -6,7 +6,7 @@
     "Name":"Web Development",
     "Degree Learning Outcomes":["LO1", "LO2"],
     "Exit award": 50,
-    "Academic":"Hari",
+    "Academic":"Hari"
   }
   {
     "Name":"Web Development",
@@ -19,7 +19,7 @@
       "CW1_LO":"LO1",
       "CW2_LO":["LO2", "LO3"],
       "CW1_Volume":"1000 words",
-      "CW3_Volume": "4000 words",
+      "CW3_Volume": "4000 words"
     }
     }
 ]
