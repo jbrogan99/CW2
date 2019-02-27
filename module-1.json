@@ -1,26 +1,32 @@
 [
   {
-    "Name": "Under Graduate",
-    "Specialization" : "Computer Science",
-    "Identification code":"UG-101",
-    "Name":"Web Development",
-    "Degree Learning Outcomes":["LO1", "LO2"],
-    "Exit award": 50,
-    "Academic":"Hari"
-  }
-  ,
+    "Name": "Undergraduate",
+    "Course":"Web Development",
+    "Module": {
+      "Learning outcomes":["LO1", "LO2"],
+      "Assignment":["CW1", "CW2"],
+      "Volume":["1000 words", "4000 words"],
+      "weights":["20%", "80%"]
+    }
+  },
   {
-    "Name":"Web Development",
-    "Specialization": "Web Degree",
-    "Identification code": "CIS101",
-    "Number of hours": "one slots",
-    "Learning outcomes":["LO1","LO2","LO3"],
-    "Assesments":{
-      "title":["CW1", "CW2"],
-      "CW1_LO":"LO1",
-      "CW2_LO":["LO2", "LO3"],
-      "CW1_Volume":"1000 words",
-      "CW3_Volume": "4000 words"
+    "Name": "Post-Graduate",
+    "Course":"Big Data",
+    "Module": {
+    "Learning outcomes":["LO1", "LO2"],
+    "Assignment":["CW1", "CW2"],
+    "Volume":["1000 words", "4000 words"],
+    "weights":["20%", "80%"]
     }
+  },
+  {
+    "Name": "Research",
+    "Course":"Data Mining",
+    "Module": {
+      "Learning outcomes":["LO1", "LO2"],
+      "Assignment":["CW1", "CW2"],
+      "Volume":["1000 words", "4000 words"],
+      "weights":["20%", "80%"]
     }
+  }
 ]
