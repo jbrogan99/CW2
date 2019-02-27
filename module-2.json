@@ -1,7 +1,7 @@
 [
   {
     "name": "XYZ",
-    "species" : "cat",
+    "species" : "xyz1",
     "foods": {
       "likes": ["tuna", "catnip"],
       "dislikes": ["ham", "zucchini"]
