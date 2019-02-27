@@ -1,26 +1,25 @@
 [
   {
-    "name": "Meowsy",
-    "species" : "cat",
-    "foods": {
-      "likes": ["tuna", "catnip"],
-      "dislikes": ["ham", "zucchini"]
-    }
-  },
-  {
-    "name": "Barky",
-    "species" : "dog",
-    "foods": {
-      "likes": ["bones", "carrots"],
-      "dislikes": ["tuna"]
-    }
-  },
-  {
-    "name": "Purrpaws",
-    "species" : "cat",
-    "foods": {
-      "likes": ["mice"],
-      "dislikes": ["cookies"]
-    }
+    "Name": "Under Graduate",
+    "Specialization" : "Computer Science",
+    "Identification code":"UG-101",
+    "Name":"Web Development",
+    "Degree Learning Outcomes":["LO1", "LO2"],
+    "Exit award": 50,
+    "Academic":"Hari",
   }
+  {
+    "Name":"Web Development",
+    "Specialization": "Web Degree",
+    "Identification code": "CIS101",
+    "Number of hours": "one slots",
+    "Learning outcomes":["LO1","LO2","LO3"],
+    "Assesments":{
+      "title":["CW1", "CW2"],
+      "CW1_LO":"LO1",
+      "CW2_LO":["LO2", "LO3"],
+      "CW1_Volume":"1000 words",
+      "CW3_Volume": "4000 words",
+    }
+    }
 ]
