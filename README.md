@@ -10,13 +10,11 @@ The present repository provide sample codes. It contains mainly three files as g
 
 You can use these files and extended the programming code of main.js, extend the data given in JSON file, and update index.html to complete the application development.
 
-################################################################################
---> Prepare deployment plan.
---> Demonstrate the plan being actioned.
---> Keep the track of different command using log that can be added in report.
+Prepare deployment plan.
+
+Demonstrate the plan being actioned.
+
+Keep the track of different command using log that can be added in report.
 
 
-################################################################################
-
-
---> Feel free to contact to your tutor. 
+Feel free to contact to your tutor. 
