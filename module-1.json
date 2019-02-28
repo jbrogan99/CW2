@@ -3,7 +3,7 @@
     "Name": "Undergraduate",
     "Course":"Web Development",
     "Module": {
-      "Learning outcomes":["LO1", "LO2"],
+      "Learning_outcomes":["LO1", "LO2"],
       "Assignment":["CW1", "CW2"],
       "Volume":["1000 words", "4000 words"],
       "weights":["20%", "80%"]
@@ -13,7 +13,7 @@
     "Name": "Post-Graduate",
     "Course":"Big Data",
     "Module": {
-    "Learning outcomes":["LO1", "LO2"],
+    "Learning_outcomes":["LO1", "LO2"],
     "Assignment":["CW1", "CW2"],
     "Volume":["1000 words", "4000 words"],
     "weights":["20%", "80%"]
@@ -23,7 +23,7 @@
     "Name": "Research",
     "Course":"Data Mining",
     "Module": {
-      "Learning outcomes":["LO1", "LO2"],
+      "Learning_outcomes":["LO1", "LO2"],
       "Assignment":["CW1", "CW2"],
       "Volume":["1000 words", "4000 words"],
       "weights":["20%", "80%"]
