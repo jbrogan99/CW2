@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/aestetics.css" />
+    <link rel="stylesheet" href="/css/grid.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="navLeftContainer">
+          <p id="logo" class="activeLink"><u>TeachingActivityTracker</u></p>
+          <a href="index.html"  id="academicTitle"
+            >Academic</a
+          ><br />
+          <a href="hod.html"  id="HODTitle"
+            >Head Of Department</a
+          >
+        </div>
+
+        <div id="urlContainer">
+          <a href="index.html" class="navHeadings" id="createModule"
+            >Create Module</a
+          >
+          <a href="createDegree.html" class="navHeadings" id="createDegree"
+            >Create Degree</a
+          >
+          <a
+            href="createAssesments.html"
+            class="navHeadings"
+            id="createAssesments"
+            >Create Assessment</a
+          >
+          <a
+          href="degree-module-assessment.html"
+          class="navHeadings"
+          id="dmaTitle"
+          >Degree/Module/Assessment</a
+        >
+     
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="assessmentPageFormImgContainer">
+      <form action="/json/assessment_data.json" method="post" id="assessmentForm" class="tableLayout">
+        <label for="assessment" id="nameLabel">Add Title:</label><br />
+        <input
+          type="text"
+          id="assessmentTitleUserInput"
+          name="assessment"
+        /><br />
+
+        <label for="assessment">Add Number:</label><br />
+        <input
+          type="number"
+          id="assessmentNumberUserInput"
+          name="assessment"
+        /><br />
+        <label for="assessment">Add Weighting (&#37):</label><br />
+        <input
+          type="number"
+          id="assessmentWeightingUserInput"
+          name="assessment"
+        /><br />
+        <label for="assessment">Add Volume:</label><br />
+        <input
+          type="number"
+          id="assessmentVolumeUserInput"
+          name="assessment"
+        /><br />
+        <label for="assessment" id="nameLabel">Add Submission Date:</label><br />
+        <input type="date" id="assessmentSubmissionUserInput" name="trip-start"
+        value="2021-01-01"
+        min="2021-01-01" max="2022-12-31">
+ 
+        <label for="assessment">Add Learning Outcomes:</label><br />
+        <textarea rows="5" cols="50" id="assessmentLoUserInput"></textarea>
+        <br />
+        <div id="containerButton">
+          <input
+            type="submit"
+            id="submitAssessmentButton"
+            value="Add Assessment"
+          />
+          <p id="fillInFieldAssessment" class="fillInFields">
+            Fill in all fields
+          </p>
+        </div>
+      </form>
+
+      <div id="assessmnetImgContainer">
+        <img
+          src="/img/degree_img-removebg-preview.png"
+          alt="assessment image"
+          id="assessmentImg"
+        />
+      </div>
+      </div>
+
+      <table id="assessmentTable">
+        <thead>
+          <tr>
+            <th id="assessmentNameUserInput" class="">Title</th>
+            <th id="assessmentIdUserInput">Number</th>
+            <th id="assessmentWeightingUserInput">Weighting &#37</th>
+            <th id="assessmentVolumeUserInput">Volume</th>
+            <th id="assessmentVolumeUserInput">Submission Date</th>
+            <th id="assessmentLoUserInput" class="learning_outcome">Learning Outcomes</th>
+          </tr>
+        </thead>
+        <tbody id="tbodyAssessment">
+          <tr id="trUserinput"></tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="/js/assessment.js"></script>
+  </body>
+</html>

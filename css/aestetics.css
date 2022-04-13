@@ -1,0 +1,149 @@
+.pTag {
+  font-weight: 100;
+}
+
+.fillInFields {
+  display: none;
+  color: red;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#logo {
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+.userInput {
+  text-align: center;
+}
+
+#degreeTable,
+#timeSlotsTable,
+#moduleTable,
+#assessmentTable,
+#moduleAndDegreeTable,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#degreeTable {
+  word-wrap: break-word;
+}
+
+table {
+  table-layout: fixed;
+}
+
+#plusSign {
+  display: flex;
+  align-self: flex-end;
+}
+
+#newDegreeContainer {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+#exitAwardsTable {
+  border-collapse: collapse;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+}
+
+.navHeadings {
+  font-size: large;
+  margin: 0;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.navHeadings:hover {
+  color: rgb(1, 129, 1);
+}
+#academicTitle:hover {
+  color: rgb(1, 129, 1);
+}
+#HODTitle:hover {
+  color: rgb(1, 129, 1);
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+}
+
+.tableLayout,
+.inputLayout,
+#moduleImgContainer,
+#assessmentPageFormImgContainer {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgb(232, 230, 230)
+  );
+}
+
+#moduleForm,
+#assessmentForm,
+#moduleAndDegreeForm {
+  padding-bottom: 20px;
+}
+
+tr:nth-child(2n) {
+  background-color: rgb(233, 233, 233);
+}
+
+.test:hover {
+  display: none;
+  color: green;
+  font-weight: bold;
+}
+
+.activeLink,
+#modTimeSlots {
+  text-decoration: none;
+  font-size: large;
+}
+
+#academicTitle,
+#HODTitle,
+#modTimeSlots:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.activeLinks {
+  color: green !important;
+}
+
+#logo {
+  margin-bottom: 10px;
+}
+
+.block {
+  display: block;
+}
+
+#roomUserInput {
+  margin-bottom: 5px;
+}
+
+#timeSlotsForm {
+  padding-bottom: 20px;
+}
+
+body {
+  background-color: rgb(232, 230, 230);
+}

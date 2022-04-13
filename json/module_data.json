@@ -1,0 +1,34 @@
+[
+  {
+    "Name": "Web Application Development",
+    "ID": "44",
+    "Number_of_credits": "20",
+    "Number_of_hours": "30",
+    "Academic": "John Gates",
+    "Learning_outcomes": "<b>LO1 - </b> Demonstrate a critical understanding of the fundamental models for structuring web applications <br> <b> LO2 - </b> Demonstrate the ability to work on a shared code-base"
+  },
+  {
+    "Name": "Server And Client Scripting",
+    "ID": "45",
+    "Number_of_credits": ["20"],
+    "Number_of_hours": ["30"],
+    "Academic": "Bilbo Baggins",
+    "Learning_outcomes": "<b> LO1 </b> - Demonstrate the ability to collaboratively analyse a large, real-world dataset <br> <b> LO2 -</b> Demonstrate the ability to action empirical analysis results for improved user "
+  },
+  {
+    "Name": "Data Driven Design",
+    "ID": "52",
+    "Number_of_credits": ["20"],
+    "Number_of_hours": ["30"],
+    "Academic": "Adam Smith",
+    "Learning_outcomes": "<b> LO1 </b> - Demonstrate an understanding of the processes and the ability to deploy an application to a server "
+  },
+  {
+    "Name": "Employability",
+    "ID": "66",
+    "Number_of_credits": ["20"],
+    "Number_of_hours": ["30"],
+    "Academic": "Jack whitehall",
+    "Learning_outcomes": "<b> LO1 </b> - This module will help you focus on your future career. It will encourage you to explore potential positions and career pathways that you could progress onto as well as highlight what you will need to do over the next 2 years in order to achieve your career goal. "
+  }
+]

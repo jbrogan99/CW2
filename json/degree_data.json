@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "Web Design and Development",
+    "ID": "1",
+    "Academic": "Aaron Hunt",
+    "Learning_outcomes": "Web design and development facilitates modern computing. As the technologies we use, such as computers, mobile telephones and games consoles, are increasingly connected to the web, the high-demand for technically-savvy people who can develop innovative ideas and create solutions for the future increases. On this degree you will develop coding, database and dynamic design skills, gain a valuable understanding of computer science, software development and the user experience, while a year-long optional work placement will fine-tune your strategic problem-solving skills, highly sought after by employers for a career in the expanding web, computer science and software development industries."
+  },
+  {
+    "Name": "Computer Science",
+    "ID": "2",
+    "Academic": "Sarah Anderson",
+    "Learning_outcomes": "We’ve come a long way since a machine with less computing power than a modern desktop PC first took rockets to the moon, with this degree now exploring the advancing theory, design, development and application of computer science. Aimed at those seeking a challenging and evolving career in computational systems you will study programming languages as well as modules underpinned by computation and mathematics theory, leading you beyond software development and programming and into emergent fields such as big data. This requires modelling and analysis skills coupled with technical knowledge to understand and process large data sets. Graduating students will have wide-reaching technical skills and knowledge relevant to many industries."
+  },
+  {
+    "Name": "Computer Engineering",
+    "ID": "88",
+    "Academic": "Bill Cosby",
+    "Learning_outcomes": "Immerse yourself in programming, robotics, automation, visualisation and system design on a degree focused on the engineering principles that underpin systems, embedded systems and control, microprocessors and instrumentation techniques."
+  },
+  {
+    "Name": "Computing (Games Programming)",
+    "ID": "105",
+    "Academic": "Dave Patterson",
+    "Learning_outcomes": "Develop expertise in the design and implementation of games software, from computer graphics and digital animation to mobile apps and streaming media, on a degree accredited by BCS, The Chartered Institute for IT.."
+  }
+]

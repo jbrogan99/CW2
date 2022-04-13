@@ -1,0 +1,62 @@
+[
+  {
+    "Title": "Building An API",
+    "Number": "cis2168",
+    "Weighting": "60",
+    "Volume": ["3000 words"],
+    "Learning_outcomes": [
+      "<b>LO1 - </b> Demonstrate a critical understanding of the fundamental models for structuring web applications <br> <b> LO2 - </b> Demonstrate the ability to work on a shared code-base"
+    ],
+    "Submission_Date": ["2022-05-01"]
+  },
+  {
+    "Title": "Website Construction",
+    "Number": "cis2177",
+    "Weighting": "80",
+    "Volume": ["4000 words"],
+    "Learning_outcomes": [
+      "<b> LO1 </b> - Demonstrate the ability to collaboratively analyse a large, real-world dataset <br> <b> LO2 -</b> Demonstrate the ability to action empirical analysis results for improved user "
+    ],
+    "Submission_Date": ["2022-05-01"]
+  },
+  {
+    "Title": "Information Architecture",
+    "Number": "cis2154",
+    "Weighting": "80",
+    "Volume": ["4000 words"],
+    "Learning_outcomes": [
+      "<b> LO1 </b> - Demonstrate the ability to collaboratively analyse a large, real-world dataset <br> <b> LO2 -</b> Demonstrate the ability to action empirical analysis results for improved user "
+    ],
+    "Submission_Date": ["2022-01-01"]
+  },
+  {
+    "Title": "Business Analytics",
+    "Number": "cis2151",
+    "Weighting": "20",
+    "Volume": ["2500 words"],
+    "Learning_outcomes": [
+      "<b> LO1 </b> - Demonstrate the ability to collaboratively analyse a large, real-world dataset <br> <b> LO2 -</b> Demonstrate the ability to action empirical analysis results for improved user "
+    ],
+    "Submission_Date": ["2022-01-01"]
+  },
+  {
+    "Title": "Cloud Computing",
+    "Number": "cis2178",
+    "Weighting": "40",
+    "Volume": ["2500 words"],
+    "Learning_outcomes": [
+      "<b> LO1 </b> - Explain the core issues of cloud computing such as security, privacy, and interoperability. choose the appropriate technologies, algorithms, and approaches for the related issues. identify problems, and explain, analyze, and evaluate various cloud computing solutions."
+    ],
+    "Submission_Date": ["2022-04-01"]
+  },
+  {
+    "Title": "Dissertation",
+    "Number": "cis2178",
+    "Weighting": "100",
+    "Volume": ["15000 words"],
+    "Learning_outcomes": [
+      "<b> LO1 </b> - The aim of this assessment is to enable students to develop an understanding and obtain practical experience of the research process and research skills required to undertake a supervised research project. Students will be required to identify relevant information on a topic and critically review the research of others. A range of approaches should be used to assess the impact this information will have on either the planning of services or improving health."
+    ],
+    "Submission_Date": ["2022-04-01"]
+  }
+]

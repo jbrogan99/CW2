@@ -1,0 +1,236 @@
+main {
+  width: 100%;
+}
+
+#degreeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#degreeProgrammes {
+  display: flex;
+  justify-content: center;
+}
+
+#containerButton {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#fillInField {
+  margin-left: 50px;
+  margin-top: 2px;
+}
+
+#submitDegreeButton {
+  height: 25px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
+  margin: auto;
+  padding: 18px;
+}
+
+#logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: large;
+}
+
+#urlContainer {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#degreeLo,
+#degreeID,
+#degreeNameHeading {
+  max-width: 300px;
+}
+
+table {
+  width: 100%;
+  height: 20px;
+}
+
+table td {
+  word-break: break-all;
+}
+
+.learning_outcome {
+  width: 40%;
+}
+
+#degreeLo {
+  width: 50% !important;
+}
+
+#degreeAcademic {
+  width: 10%;
+}
+
+#degreeName {
+  width: 20%;
+}
+
+#degreeId,
+#thMmoduleIdUserInput {
+  width: 5%;
+}
+
+#thMmoduleNohUserInput,
+#thModuleNocserInput {
+  width: 8%;
+}
+
+#thModuleAcedemicUserInput {
+  width: 15%;
+}
+
+#thModuleNameUserInput {
+  width: 20%;
+}
+
+#thMmoduleLoUserInput {
+  width: auto;
+}
+
+#assessmentNameUserInput {
+  width: 17%;
+}
+
+#inlineSpan {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+}
+
+.inputNewDegreeClass {
+  margin-top: 10px;
+}
+
+.inputNewDegreeClass:last-child {
+  margin-bottom: 15px;
+}
+
+table {
+  table-layout: fixed;
+}
+
+td {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#inputExitContainer {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 50px 1fr;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#degreeForm {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+#exitAwardsTable {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  height: 100%;
+}
+
+#exitTitle {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+}
+
+#moduleAndDegreeForm {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+#existingModulesContainer {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#degreeContainer {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#assessmentContainer {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+#flexContainer,
+#flexContainerAssessment {
+  display: flex;
+  flex-direction: row;
+}
+
+#HODTitle {
+  margin-top: 0px;
+}
+
+#academicTitle {
+  margin-bottom: 0px;
+}
+
+.activeLinks {
+  color: green;
+  font-weight: bold;
+}
+
+#modPageFormImgContainer,
+#assessmentPageFormImgContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+#moduleForm {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#moduleImg {
+  position: relative;
+  top: 80px;
+}
+
+#assessmentImg {
+  position: relative;
+  top: 30px;
+}
+
+#moduleImg,
+#assessmentImg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#moduleImgContainer,
+#assessmnetImgContainer {
+  display: flex;
+  justify-content: center;
+}
+#moduleImg {
+  height: 35%;
+}
+#assessmentImg {
+  height: 50%;
+}

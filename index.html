@@ -1,18 +1,112 @@
-<html>
-<head>
-  <meta name ="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Coursework2_WebApp</title>
-    <link rel="stylesheet" href="css/styles.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/aestetics.css" />
+    <link rel="stylesheet" href="/css/grid.css" />
   </head>
-<body>
 
-  <header>
-    <h1>Web Application test2 Development Course Work-2 </h1>
-    <button id ="btn">Fetch information about the modules</button>
-  </header>
+  <body>
+    <header>
+      <nav>
+        <div id="navLeftContainer">
+          <p id="logo"><u>TeachingActivityTracker</u></p>
+          <a href="index.html" id="academicTitle">Academic</a><br />
+          <a href="hod.html" id="HODTitle">Head Of Department</a>
+        </div>
 
-  <div id="module-info"></div>
+        <div id="urlContainer">
+          <a href="index.html" class="navHeadings" id="createModule"
+            >Create Module</a
+          >
+          <a href="createDegree.html" class="navHeadings" id="createDegree"
+            >Create Degree</a
+          >
+          <a
+            href="createAssesments.html"
+            class="navHeadings"
+            id="createAssesments"
+            >Create Assessment</a
+          >
+          <a
+            href="degree-module-assessment.html"
+            class="navHeadings"
+            id="dmaTitle"
+            >Degree/Module/Assessment</a
+          >
+        </div>
+      </nav>
+    </header>
 
-  <script src="main.js"></script>
-</body>
+    <main>
+      <div id="modPageFormImgContainer">
+        <form id="moduleForm" class="tableLayout">
+          <div id="inputContainerMod1">
+            <label for="module" id="nameLabel">Add Module Name:</label><br />
+            <input type="text" id="moduleNameUserInput" name="module" /><br />
+            <label for="module">Add ID:</label><br />
+            <input type="number" id="moduleIdUserInput" name="module" /><br />
+            <label for="module">Number of Hours:</label><br />
+            <input type="number" id="moduleNohUserInput" name="module" /><br />
+            <div id="inputContainerMod2">
+              <label for="module">Number of creidts:</label><br />
+              <input
+                type="number"
+                id="moduleNocUserInput"
+                name="module"
+              /><br />
+              <label for="module">Academic:</label><br />
+              <input
+                type="number"
+                id="moduleAcademicUserInput"
+                name="module"
+              /><br />
+              <label for="module">Add Learning Outcomes:</label><br />
+              <textarea rows="5" cols="50" id="moduleLoUserInput"></textarea>
+              <br />
+              <div id="containerButtonModule">
+                <input
+                  type="button"
+                  id="submitModuleButton"
+                  value="Add Module"
+                />
+                <p id="fillInFieldModule" class="fillInFields">
+                  Fill in all fields
+                </p>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div id="moduleImgContainer">
+          <img
+            src="/img/module-img-removebg.png"
+            alt="module image"
+            id="moduleImg"
+          />
+        </div>
+      </div>
+
+      <table id="moduleTable">
+        <thead>
+          <tr>
+            <th id="thModuleNameUserInput">Name</th>
+            <th id="thMmoduleIdUserInput">ID</th>
+            <th id="thMmoduleNohUserInput">Number of creidts</th>
+            <th id="thModuleNocserInput">Number of hours</th>
+            <th id="thModuleAcedemicUserInput">Academic</th>
+            <th id="thMmoduleLoUserInput" class="learning_outcome">
+              Learning Outcomes
+            </th>
+          </tr>
+        </thead>
+        <tbody id="tbodyModule">
+          <tr id="trUserinput"></tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="/js/module.js"></script>
+  </body>
 </html>

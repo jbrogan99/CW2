@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/aestetics.css" />
+    <link rel="stylesheet" href="/css/grid.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="navLeftContainer">
+          <p id="logo"><u>TeachingActivityTracker</u></p>
+          <a href="index.html" id="academicTitle">Academic</a><br />
+          <a href="hod.html" id="HODTitle">Head Of Department</a>
+        </div>
+
+        <div id="urlContainer">
+          <a href="index.html" class="navHeadings" id="createModule"
+            >Create Module</a
+          >
+          <a href="createDegree.html" class="navHeadings" id="createDegree"
+            >Create Degree</a
+          >
+          <a
+            href="createAssesments.html"
+            class="navHeadings"
+            id="createAssesments"
+            >Create Assessment</a
+          >
+          <a
+            href="degree-module-assessment.html"
+            class="navHeadings"
+            id="dmaTitle"
+            >Degree/Module/Assessment</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="inputExitContainer" class="inputLayout">
+        <form id="degreeForm">
+          <label for="degree" id="nameLabel">Add Degree Name:</label><br />
+          <input type="text" id="degreeNameUserInput" name="degree" /><br />
+          <label for="degree">Add ID:</label><br />
+          <input type="number" id="degreeIdUserInput" name="degree" /><br />
+          <label for="degree">Add Academic:</label><br />
+          <input type="text" id="degreeAcademicUserInput" name="degree" /><br />
+          <label for="degree">Add Learning Outcomes:</label><br />
+          <textarea rows="5" cols="50" id="degreeLoUserInput"></textarea> <br />
+          <div id="containerButton">
+            <input type="button" id="submitDegreeButton" value="Add Degree" />
+            <p id="fillInFieldDegree" class="fillInFields">
+              Fill in all fields
+            </p>
+          </div>
+        </form>
+        <div id="exitTitle">
+          <h3>Exit Awards</h3>
+        </div>
+        <table id="exitAwardsTable">
+          <thead>
+            <tr>
+              <th id="first">First Class</th>
+              <th id="upper">Upper Second Class (2:1)</th>
+              <th id="lower">Lower Second Class (2:2)</th>
+              <th id="third" class="learning_outcome">Third Class</th>
+              <th id="pass">Pass Degree</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyAwards">
+            <tr>
+              <td>70-100%</td>
+              <td>60-69%</td>
+              <td>50-59%</td>
+              <td>40-49%</td>
+              <td>0-39%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <table id="degreeTable">
+        <thead>
+          <tr>
+            <th id="degreeName">Name</th>
+            <th id="degreeId">ID</th>
+            <th id="degreeAcademic">Academic</th>
+            <th id="degreeLo" class="learning_outcome">Learning Outcomes</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr id="trUserinput"></tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="/js/degree.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/aestetics.css" />
+    <link rel="stylesheet" href="/css/grid.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="navLeftContainer">
+          <p id="logo" ><u>TeachingActivityTracker</u></p>
+          <a href="index.html" id="academicTitle"
+            >Academic</a
+          ><br />
+          <a href="hod.html"  id="HODTitle"
+            >Head Of Department</a
+          >
+        </div>
+
+        <div id="urlContainer">
+          <a href="index.html" class="navHeadings" id="createModule"
+            >Create Module</a
+          >
+          <a href="createDegree.html" class="navHeadings" id="createDegree"
+            >Create Degree</a
+          >
+          <a
+            href="createAssesments.html"
+            class="navHeadings"
+            id="createAssesments"
+            >Create Assessment</a
+          >
+          <a
+            href="degree-module-assessment.html"
+            class="navHeadings"
+            id="dmaTitle"
+            >Degree/Module/Assessment</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <form id="moduleAndDegreeForm" class="tableLayout">
+        <div id="existingModulesContainer">   
+        <label for="module_options">Add Module:</label><br />
+        <select name="module_options" id="module_options">
+           
+        </select> </br>
+      </div>     
+
+
+        
+        
+        <div id="degreesContainer">
+        
+
+        </div>
+       
+
+        <div id="assessmentContainer">
+
+
+        </div>
+        <div id="containerButtonModule">
+          <input type="button" id="submitAllButton" value="Submit" /> 
+          <p id="fillInFieldModuleDegree" class="fillInFields">Assessments must at up to 100%</p>
+        </div>
+      </form>
+
+      <table id="moduleAndDegreeTable" >
+        <thead>
+          <tr id="firstTableHeaderRow">
+            <th id="existingModuleUserInput">Module</th>
+            <th id= "lastInputField">Degree 1</th>
+            <th>Degree 2</th>
+            <th>Degree 3</th>
+            <th>Assessment 1</th>
+            <th>Assessment 2</th>
+            <th id="thAssessment">Assessment 3</th>
+          </tr>
+        </thead>
+        <tbody id="tbodyModuleDegree">
+          <tr id="trUserinput"></tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="/js/degree-module-assessment.js"></script>
+  </body>
+</html>

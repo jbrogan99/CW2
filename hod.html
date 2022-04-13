@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/aestetics.css" />
+    <link rel="stylesheet" href="/css/grid.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="navLeftContainer">
+          <p id="logo" ><u>TeachingActivityTracker</u></p>
+          <a href="index.html"  id="academicTitle"
+            >Academic</a
+          ><br />
+          <a href="hod.html"  id="HODTitle"
+            >Head Of Department</a
+          >
+        </div>
+        <div id="urlContainerHod">
+          <a href="hod.html" id="modTimeSlots">Module Time Slots</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <form action="assessment_data.json" id="timeSlotsForm"class="tableLayout">
+            <div id="existingModulesContainer">   
+                <label for="module_options">Add Module:</label><br />
+                <select name="module_options" id="module_options">    
+                </select> </br>
+              </div>   
+              <div id="InputcontainerAcademic">
+              <label for="academicInput" id="academicInput" class="block">Add Academic:</label>
+                <input type="text" id="academicUserInput"class="block" name="academicInput" />
+                <label for="academicInput" id="academicInput" class="block">Add Time Slot:</label>
+                <input type="number" id="timeSlotUserInput" name="academicInput" class="block" />
+                <label for="academicInput" id="academicInput"class="block">Add Room:</label>
+                <input type="text" id="roomUserInput" name="academicInput" class="block"/>
+            </div>
+            <input type="button" id="submitButton2" value="Submit" /> 
+          <p id="fillInFieldModuleDegree" class="fillInFields">Fill in all fields</p>
+        </form>
+
+        <table id="timeSlotsTable">
+            <thead>
+              <tr>
+                <th id="moduleHeading">Module</th>
+                <th id="academicHeading">Academic</th>
+                <th id="timeSlotsHeading">Time Slots</th>
+                <th id="roomHeading"> Room</th>
+              
+              </tr>
+            </thead>
+            <tbody id="tbodyTimeSlots">
+              <tr id="trTimeSlots"></tr>
+            </tbody>
+          </table>
+        <script src="/js/modTimeSlots.js"></script>
+  </body>
+</html>
