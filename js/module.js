@@ -1,21 +1,9 @@
 var academicTitle = document.getElementById("academicTitle");
-var HODTitle = document.getElementById("HODTitle");
+
 var createModule = document.getElementById("createModule");
-var createDegree = document.getElementById("createDegree");
-var createAssesments = document.getElementById("createAssesments");
-var dmaTitle = document.getElementById("dmaTitle");
-var modTimeSlots = document.getElementById("modTimeSlots");
 
 academicTitle.classList.add("activeLinks");
 createModule.classList.add("activeLinks");
-academicTitle.addEventListener("click", function () {
-  academicTitle.classList.add("activeLinks");
-  HODTitle.classList.remove("activeLinks");
-});
-HODTitle.addEventListener("click", function () {
-  HODTitle.classList.add("activeLinks");
-  academicTitle.classList.remove("activeLinks");
-});
 
 function clearFieldsModule() {
   document.getElementById("moduleIdUserInput").value = "";

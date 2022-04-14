@@ -1,4 +1,5 @@
 function clearFieldsAssessments() {
+  //clearing input fields for assessment
   document.getElementById("assessmentTitleUserInput").value = "";
   document.getElementById("assessmentLoUserInput").value = "";
   document.getElementById("assessmentNumberUserInput").value = "";
@@ -6,17 +7,19 @@ function clearFieldsAssessments() {
   document.getElementById("assessmentWeightingUserInput").value = "";
 }
 function addUserInputToTable(e, values, tbody) {
+  //Adding user input to the table
   e.preventDefault();
   var tr = document.createElement("tr");
   Object.values(values).forEach((value) => {
+    //looping through objects (user inputs)
     if (value == null || undefined) {
       value = "";
     }
-    var td = document.createElement("td");
-    td.innerHTML += value;
-    tr.appendChild(td);
+    var td = document.createElement("td"); //creating table data
+    td.innerHTML += value; // assigning user input to table data
+    tr.appendChild(td); // appending user inputs to tr
   });
-  tbody.appendChild(tr);
+  tbody.appendChild(tr); // appending table row to table body
 }
 
 function hideErrorMessage(errorMessage) {
@@ -28,59 +31,59 @@ function showErrorMessage(errorMessage) {
 }
 var submitAssessmentButton = document.getElementById("submitAssessmentButton");
 
-if (submitAssessmentButton) {
-  submitAssessmentButton.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    var assessmentField = document.getElementById("fillInFieldAssessment");
-    var tableBody = document.getElementById("tbodyAssessment");
-    var assessmentTitleUserInput = document.getElementById(
-      "assessmentTitleUserInput"
-    ).value;
-    var assessmentLoUserInput = document.getElementById(
-      "assessmentLoUserInput"
-    ).value;
-    var assessmentNumberUserInput = document.getElementById(
-      "assessmentNumberUserInput"
-    ).value;
-    var assessmentVolumeUserInput = document.getElementById(
-      "assessmentVolumeUserInput"
-    ).value;
-    var assessmentWeightingUserInput = document.getElementById(
-      "assessmentWeightingUserInput"
-    ).value;
-    var assessmentSubmissionUserInput = document.getElementById(
-      "assessmentSubmissionUserInput"
-    ).value;
+submitAssessmentButton.addEventListener("click", function (evt) {
+  //click function
+  evt.preventDefault(); //prevent submit from firing on page load
+  var assessmentField = document.getElementById("fillInFieldAssessment");
+  var tableBody = document.getElementById("tbodyAssessment");
+  var assessmentTitleUserInput = document.getElementById(
+    // gathering input values
+    "assessmentTitleUserInput"
+  ).value;
+  var assessmentLoUserInput = document.getElementById(
+    "assessmentLoUserInput"
+  ).value;
+  var assessmentNumberUserInput = document.getElementById(
+    "assessmentNumberUserInput"
+  ).value;
+  var assessmentVolumeUserInput = document.getElementById(
+    "assessmentVolumeUserInput"
+  ).value;
+  var assessmentWeightingUserInput = document.getElementById(
+    "assessmentWeightingUserInput"
+  ).value;
+  var assessmentSubmissionUserInput = document.getElementById(
+    "assessmentSubmissionUserInput"
+  ).value;
 
-    if (
-      assessmentTitleUserInput &&
-      assessmentLoUserInput &&
-      assessmentNumberUserInput &&
-      assessmentVolumeUserInput &&
-      assessmentWeightingUserInput !== ""
-    ) {
-      addUserInputToTable(
-        evt,
-        {
-          title: assessmentTitleUserInput,
-          number: assessmentNumberUserInput,
-          weighting: assessmentWeightingUserInput,
-          volume: assessmentVolumeUserInput,
-          submission: assessmentSubmissionUserInput,
-          learningOutcomes: assessmentLoUserInput,
-        },
-        tableBody
-      );
-      hideErrorMessage(assessmentField);
-      clearFieldsAssessments();
-    } else {
-      showErrorMessage(assessmentField);
-    }
-  });
-}
+  if (
+    assessmentTitleUserInput &&
+    assessmentLoUserInput &&
+    assessmentNumberUserInput &&
+    assessmentVolumeUserInput &&
+    assessmentWeightingUserInput !== ""
+  ) {
+    addUserInputToTable(
+      evt,
+      {
+        title: assessmentTitleUserInput, // instantiate objects values
+        number: assessmentNumberUserInput,
+        weighting: assessmentWeightingUserInput,
+        volume: assessmentVolumeUserInput,
+        submission: assessmentSubmissionUserInput,
+        learningOutcomes: assessmentLoUserInput,
+      },
+      tableBody
+    );
+    hideErrorMessage(assessmentField);
+    clearFieldsAssessments();
+  } else {
+    showErrorMessage(assessmentField);
+  }
+});
 
 fetch(
-  // "https://raw.githubusercontent.com/profharimohanpandey/CW2/master/module-1.json"
+  // fetch request for assessment data
   "/json/assessment_data.json"
 )
   .then((response) => response.json())
@@ -89,9 +92,11 @@ fetch(
     if (assessmentTable) {
       const object_data = response;
       for (var i = 0; i < object_data.length; ++i) {
+        // loop over data retuned from response
         var objects = object_data[i];
         var row = document.createElement("tr");
         var properties = [
+          // keys from json file
           "Title",
           "Number",
           "Weighting",
@@ -100,30 +105,31 @@ fetch(
           "Learning_outcomes",
         ];
         for (var j = 0; j < properties.length; ++j) {
+          // loop over keys
           var cell = document.createElement("td");
-          cell.innerHTML = objects[properties[j]];
-          row.appendChild(cell);
+          cell.innerHTML = objects[properties[j]]; // add data to keys
+          row.appendChild(cell); // add row to data
         }
-        assessmentTable.appendChild(row);
+        assessmentTable.appendChild(row); // add table to row
       }
     }
   });
 
 var academicTitle = document.getElementById("academicTitle");
-var HODTitle = document.getElementById("HODTitle");
-var createModule = document.getElementById("createModule");
-var createDegree = document.getElementById("createDegree");
+// var HODTitle = document.getElementById("HODTitle");
+// var createModule = document.getElementById("createModule");
+// var createDegree = document.getElementById("createDegree");
 var createAssesments = document.getElementById("createAssesments");
-var dmaTitle = document.getElementById("dmaTitle");
+//var dmaTitle = document.getElementById("dmaTitle");
 
-academicTitle.classList.add("activeLinks");
+academicTitle.classList.add("activeLinks"); // add active links
 createAssesments.classList.add("activeLinks");
 
-academicTitle.addEventListener("click", function () {
-  academicTitle.classList.add("activeLinks");
-  HODTitle.classList.remove("activeLinks");
-});
-HODTitle.addEventListener("click", function () {
-  HODTitle.classList.add("activeLinks");
-  academicTitle.classList.remove("activeLinks");
-});
+// academicTitle.addEventListener("click", function () {
+//   academicTitle.classList.add("activeLinks");
+//   HODTitle.classList.remove("activeLinks");
+// });
+// HODTitle.addEventListener("click", function () {
+//   HODTitle.classList.add("activeLinks");
+//   academicTitle.classList.remove("activeLinks");
+// });

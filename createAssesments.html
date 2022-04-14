@@ -12,6 +12,7 @@
   <body>
     <header>
       <nav>
+        <!-- academic and head of department nav  -->
         <div id="navLeftContainer">
           <p id="logo" class="activeLink"><u>TeachingActivityTracker</u></p>
           <a href="index.html"  id="academicTitle"
@@ -22,6 +23,7 @@
           >
         </div>
 
+        <!-- create indvidual and group modules/degree/assessment nav-->
         <div id="urlContainer">
           <a href="index.html" class="navHeadings" id="createModule"
             >Create Module</a
@@ -48,7 +50,7 @@
 
     <main>
       <div id="assessmentPageFormImgContainer">
-      <form action="/json/assessment_data.json" method="post" id="assessmentForm" class="tableLayout">
+      <form action="/json/assessment_data.json" method="post" id="assessmentForm" class="tableLayout"> <!--form for user input-->
         <label for="assessment" id="nameLabel">Add Title:</label><br />
         <input
           type="text"
@@ -103,10 +105,10 @@
       </div>
       </div>
 
-      <table id="assessmentTable">
+      <table id="assessmentTable"> <!--table for assessment-->
         <thead>
           <tr>
-            <th id="assessmentNameUserInput" class="">Title</th>
+            <th id="assessmentNameUserInput">Title</th>
             <th id="assessmentIdUserInput">Number</th>
             <th id="assessmentWeightingUserInput">Weighting &#37</th>
             <th id="assessmentVolumeUserInput">Volume</th>

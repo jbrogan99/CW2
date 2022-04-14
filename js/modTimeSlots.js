@@ -1,9 +1,4 @@
 var academicTitle = document.getElementById("academicTitle");
-var HODTitle = document.getElementById("HODTitle");
-var createModule = document.getElementById("createModule");
-var createDegree = document.getElementById("createDegree");
-var createAssesments = document.getElementById("createAssesments");
-var dmaTitle = document.getElementById("dmaTitle");
 var modTimeSlots = document.getElementById("modTimeSlots");
 
 modTimeSlots.classList.add("activeLinks");

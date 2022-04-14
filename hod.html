@@ -11,6 +11,7 @@
   <body>
     <header>
       <nav>
+           <!-- academic and head of department nav  -->
         <div id="navLeftContainer">
           <p id="logo" ><u>TeachingActivityTracker</u></p>
           <a href="index.html"  id="academicTitle"
@@ -20,13 +21,14 @@
             >Head Of Department</a
           >
         </div>
+         <!-- create indvidual and group modules/degree/assessment nav-->
         <div id="urlContainerHod">
           <a href="hod.html" id="modTimeSlots">Module Time Slots</a>
         </div>
       </nav>
     </header>
     <main>
-        <form action="assessment_data.json" id="timeSlotsForm"class="tableLayout">
+        <form action="assessment_data.json" id="timeSlotsForm"class="tableLayout"> <!--form for user input-->
             <div id="existingModulesContainer">   
                 <label for="module_options">Add Module:</label><br />
                 <select name="module_options" id="module_options">    
@@ -44,7 +46,7 @@
           <p id="fillInFieldModuleDegree" class="fillInFields">Fill in all fields</p>
         </form>
 
-        <table id="timeSlotsTable">
+        <table id="timeSlotsTable"> <!--table for timslots -->
             <thead>
               <tr>
                 <th id="moduleHeading">Module</th>
